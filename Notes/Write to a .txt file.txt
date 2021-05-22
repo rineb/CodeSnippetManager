@@ -1,0 +1,12 @@
+Write to a .txt file
+Argument filePath should have a .txt postfix  
+Java
+private void writeFileBytes(String filePath, String str) {
+        Path path = Paths.get(filePath);
+        try {
+            byte[] strToBytes = str.getBytes();
+            Files.write(path, strToBytes);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+}

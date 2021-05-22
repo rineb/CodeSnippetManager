@@ -1,0 +1,9 @@
+Rounding numbers
+Method rounds value to numDigits
+Java
+public static double fl(double val) {
+        BigDecimal bigDec = new BigDecimal(val);
+        MathContext context = new MathContext(numDigits, rounding);
+        bigDec = bigDec.round(context);
+        return bigDec.doubleValue();
+    }

@@ -1,0 +1,19 @@
+Multiplication of matrices
+Method for multiplying two given matrices a and b
+Java
+public static double[][] multiplyMatrices(double[][] a, double[][] b) {
+        int a_rows = a.length, b_rows = b.length;
+        b_col = b[0].length;
+
+        double[][] result = new double[a_rows][b_col];
+
+        for (int i = 0; i < a_rows; i++) {
+            for (int j = 0; j < b_col; j++) {
+                for (int k = 0; k < b_rows; k++) {
+                    result[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
+
+        return result;
+    }

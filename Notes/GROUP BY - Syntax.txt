@@ -1,0 +1,8 @@
+GROUP BY - Syntax
+GROUP BY is often used with aggregate functions
+SQL
+SELECT column1, column2
+FROM table_name
+WHERE [ conditions ]
+GROUP BY column1, column2
+ORDER BY column1, column2
